@@ -8,6 +8,9 @@ pipeline {
         JAVA_HOME = "/tmp/jdk-21.0.5"
         PATH = "${JAVA_HOME}/bin:${PATH}"
     }
+    tool {
+        maven 'Maven'
+    }
     stages {
         stage('Checkout') {
             steps {
