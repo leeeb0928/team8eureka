@@ -17,7 +17,7 @@ pipeline {
         stage('Build with Gradle') {
             steps {
                 script {
-                    sh 'cd eurekaserver && mvn clean package -DskipTests'
+                    sh 'mvn clean package -DskipTests'
                 }
             }
         }
